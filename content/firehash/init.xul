@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://firehash/skin/firehash.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://firehash/locale/firehash.dtd">
+<overlay id="firehash" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://firehash/content/init.js"></script> 
+  	<menupopup id="menu_ToolsPopup">
+    <menuitem id="firehash-hello" label="Fire Hash" oncommand="launchfirehash();" insertbefore="prefSep"/>
+  </menupopup>
+</overlay>

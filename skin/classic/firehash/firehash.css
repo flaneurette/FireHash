@@ -1,0 +1,59 @@
+/* Toolbar icons */
+#firehash-button {
+	list-style-image: url("chrome://firehash/skin/icon_large.png");
+}
+
+toolbar[iconsize="small"] #firehash-button {
+	list-style-image: url("chrome://firehash/skin/icon_small.png");
+}
+#firehashwindow {
+	padding:5px;
+	color:#000;
+	background-color:#898989;
+	border:1px solid #ccc;
+}
+.lineheightfix {
+	line-height:21px !important;
+	margin-top:5px;	
+}
+
+#firehashwindow button {
+	-moz-appearance: none;
+	-moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+	color:#000;
+	padding:2px;
+	background-color:#d6d6d6;
+	border:0px solid;
+	border:1px solid #c3c3c3;
+	background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+}
+
+#firehashwindow button:hover {
+	-moz-appearance: none;
+	-moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+	color:#000;
+	padding:2px;
+	background-color:#d6d6d6;
+	border:0px solid;
+	border:1px solid #666;
+	background: -moz-linear-gradient(top, #d9d9d9, #898989);
+}
+
+#firehashwindow groupbox, #firehashwindow grid {
+	-moz-appearance: none;
+	-moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+	color:#000;
+	padding:2px;
+	background-color:#d6d6d6;
+	border:0px solid;
+	background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+}
+
+#firehashwindow columns, #firehashwindow rows, #firehashwindow row {
+	-moz-appearance: none;
+	-moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
+	color:#000;
+	padding:2px;
+	background-color:#d6d6d6;
+	border:0px solid;
+}

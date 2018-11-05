@@ -1,0 +1,10 @@
+<!ENTITY button1.label "Compute">
+<!ENTITY menu1.label "Hash engine...">
+<!ENTITY method.label "Method">
+<!ENTITY browse.label "Browse...">
+<!ENTITY result.label "Result">
+<!ENTITY copy.label "Copy">
+<!ENTITY text.label "Text">
+
+
+

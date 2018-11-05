@@ -1,0 +1,12 @@
+content firehash content/firehash/
+
+overlay chrome://browser/content/browser.xul chrome://firehash/content/init.xul
+
+skin firehash classic/1.0 skin/classic/firehash/
+style chrome://browser/content/browser.xul chrome://firehash/skin/firehash.css
+style chrome://global/content/customizeToolbar.xul chrome://firehash/skin/firehash.css
+
+locale firehash en-US locale/en-US/
+locale firehash nl-NL locale/nl-NL/
+locale firehash de-DE locale/de-DE/
+locale firehash ru-RU locale/ru-RU/

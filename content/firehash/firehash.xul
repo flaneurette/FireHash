@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://firehash/skin/firehash.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://firehash/locale/firehash.dtd">
+<window title="Fire Hash" onload="window.focus();" width="600" height="148" id="firehashwindow" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="firehash.js" />
+	<stringbundleset id="stringbundleset">
+   		<stringbundle id="string-bundle-bundle" src="chrome://firehash/locale/strings.properties"/>
+ 	</stringbundleset>
+    <groupbox>
+        <grid>
+            <columns>
+                <column flex="3" />
+                <column flex="1" />
+            </columns>
+            <rows>
+                <row>
+                    <label value="&text.label;" class="lineheightfix"/>
+                    <textbox id="plaintext" size="150" onkeyup="firehash.computehash();" />
+					<button label="&browse.label;" oncommand="firehash.checksum();" />
+                </row>
+                <row>
+                    <label value="&method.label;" class="lineheightfix"/>
+                    <menulist id="hashact" cols="2">
+                        <menupopup>
+                            <menuitem label="&menu1.label;" value="" />
+                            <menuitem label="MD2" value="MD2" />
+                            <menuitem label="MD5" value="MD5" />
+                            <menuitem label="SHA1" value="SHA1" />
+                            <menuitem label="SHA256" value="SHA256" />
+                            <menuitem label="SHA384" value="SHA384" />
+                            <menuitem label="SHA512" value="SHA512" />
+                        </menupopup>
+                    </menulist>
+                    <button label="&button1.label;"  oncommand="firehash.computehash();" />
+                </row>
+                <row>
+                    <label value="&result.label;" class="lineheightfix"/>
+                    <textbox id="result" />
+					 <button label="&copy.label;" value="Copy" oncommand="firehash.clip();" />
+                </row>
+            </rows>
+        </grid>
+    </groupbox>
+</window>
